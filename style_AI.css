@@ -1,0 +1,361 @@
+
+@font-face {
+  font-family:Alte-Haas-Grotesk;
+  src: url("texgyreheros.gyreheros-regular.otf");
+}
+@font-face {
+  font-family: Times;
+  src: url("times new roman.ttf");}
+  .hidden {
+    display: none;
+    
+}
+
+#movableElement {
+  
+  
+  width: auto;
+  text-align: justify;
+  background-color:transparent;
+  position: absolute;
+  font-size: 12pt;
+  font-family: Alte-Haas-Grotesk;
+  z-index: -1;
+
+}
+.show {
+  background-color: white;
+  font-family:Alte-Haas-Grotesk;
+  font-size: 16pt;
+  position: absolute;
+  z-index: 3;
+}
+
+
+
+  .custom-icon-button, .custom-icon-button0 {
+   
+    background-color: transparent;
+    color:#000000;
+    border: 0;
+    
+    line-height: 11pt;
+    cursor: pointer;
+    font-size: 12pt;
+  letter-spacing: -0.5pt;
+  font-family:Alte-Haas-Grotesk;
+  margin-left: 0;
+  margin-right: 0;
+  text-decoration: none;
+    color: inherit;
+  }
+  .custom-icon-button0 a,
+  .custom-icon-button a {
+    text-decoration: none;
+    color: inherit; 
+  }
+  
+   .custom-icon-button0:hover {
+    text-decoration-line: underline;
+    transition-duration: 50ms;
+  }
+  .custom-icon-button:hover {
+    text-decoration-line: underline;
+    transition-duration: 50ms;
+  }
+  .button {
+    cursor: pointer;
+    z-index: 1;
+   
+    font-size: 12pt;
+  letter-spacing: -0.5pt;
+  line-height: 0pt;
+    font-family:Alte-Haas-Grotesk;
+    margin-left: 0px;
+    
+    
+    color: #000000;
+    text-decoration: none;
+    text-align: justify;
+    
+    
+   }
+  .button:hover {
+      
+      text-decoration-line: underline;
+      transition-duration: 50ms;
+    }
+    
+    
+    .trigger0 {
+      z-index: 2;
+    }
+   
+    .trigger0, .trigger2,.trigger3, .trigger4,.trigger5,.trigger6 {
+      cursor: pointer;
+      z-index: 1;
+      font-family:Alte-Haas-Grotesk;
+      
+      
+      }
+      .trigger6{
+        margin-right: 20px;
+      }
+      
+      
+    
+    
+      
+      
+      
+    
+  img {
+    object-fit: fill;
+    z-index: -999;
+  }
+ 
+
+  .mySlides{
+    position: relative;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+
+  
+.description {
+  position: relative;
+  z-index: 999;
+  height: auto;
+  text-align: left;
+}
+
+body{
+  height:100vh;
+   overflow-y:scroll;
+   overflow-x: hidden;
+   display: flex;
+   flex-direction: column;
+   margin-bottom:0;
+   margin-top: 0;
+ }
+ 
+ .column-container{
+   flex: 0.4;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-top: 0;
+   margin-left: 0;
+   margin-right: 0;
+   padding-top: 5px;
+   
+   z-index: 2;
+   background-color: transparent;
+   
+ }
+ 
+ .container{
+   display: flex;
+   background-color:transparent;
+   flex:15;
+   width: 100%;
+   height: 100%;
+   
+ }
+
+ .trigger {
+  flex:0.8;
+  position: fixed;
+  bottom:0;
+     z-index: 999;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between; 
+     width: 100%;
+     max-height: 100%;
+     text-align: left;
+     background-color:  white;
+     padding-top: 6px;
+     padding-bottom: 6px;
+     
+ }
+
+
+
+
+
+
+
+  .box0 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+   text-align: left;
+   background-color: transparent;
+   transition: flex 0.15s;
+   margin-left: 20px;
+   
+   border:solid rgb(255, 255, 255);
+   border-width: 0px 0px 0 1px;
+   
+  }
+
+  .box1 {
+    flex: 1;
+    background-color:white;
+   
+   
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: flex 0.15s;
+    z-index: 0;
+  }
+
+  .box1:hover {
+    cursor: w-resize;
+  }
+
+  .box2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+   text-align: left;
+    background-color:transparent;
+    height: auto; /* Make the container take the full viewport height */
+    border: solid rgb(255, 255, 255);
+    padding-top: 5px;
+    margin-right: 20px;
+    transition: flex 0.15s;
+    border-width: 0px;
+  }
+  .text-container{
+    position: absolute;
+    top: 0;
+   right: 20px;
+   position: fixed;
+   
+    
+  }
+  
+  img{
+    margin: 0%;
+    padding: 0%;
+    padding-bottom: 0%;
+    mix-blend-mode:multiply;
+  }
+  .show{
+    visibility: hidden;
+  }
+  .triggerMOBILE{
+    visibility: hidden;
+  }
+  p {
+    position: relative;
+    z-index: 999;
+    font-family: Times;
+    font-size: 24pt;
+    
+    text-align: left;
+    padding-bottom: 15%;
+   
+
+  }
+  
+  @media (max-width: 900px) {
+
+    body {
+      background-color: #FFFFFF;
+      display:flex;
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow-y:auto;
+      overflow-x:hidden;
+    }
+    .container {
+      height: 100vh;
+      flex-direction:column;
+      z-index: 1;
+      position: relative;
+      
+    }
+
+    .column-container{
+      margin-top: 4px;
+      position: fixed;
+      margin-left: 10px;
+      z-index: 2;
+      padding: 0;
+      display: flex;
+      text-align: center;
+      
+    }
+      .custom-icon-button {
+        
+        background-color: transparent;
+        color:#000000;
+       
+        cursor: pointer;
+        padding-left: 0;
+        
+      letter-spacing: -0.5pt;
+      font-family:Alte-Haas-Grotesk;
+      margin-top: 1px;
+      }
+      .custom-icon-button0{
+        visibility: hidden;
+      }
+
+  
+    
+    
+    
+  #tracker-container{
+    display: none;
+  }
+  #movableElement {
+  visibility: hidden;
+  
+  }
+  .box1 {
+    margin-top: 28px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .box2 {
+    padding-bottom: 6px;
+  }
+  p {
+    visibility: visible;
+    font-size: 12pt;
+    line-height: 16pt;
+    text-align: left;
+    font-family: Alte-Haas-Grotesk;
+    margin-left: 0;
+    letter-spacing: 0.1pt;
+  }
+  .trigger0, .trigger2,.trigger3, .trigger4,.trigger5,.trigger6 {
+    padding-left: 0;
+    padding-right: 36px;
+    margin-left: 0;
+    padding-bottom: 6px;
+    }
+
+    .trigger{
+      margin-left: 0px;
+      position: fixed;
+     padding-left: 10px;
+      z-index: 999;
+      white-space: nowrap;
+overflow-x: auto;
+      justify-content: space-between; 
+      
+    
+    }
+}

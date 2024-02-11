@@ -1,0 +1,427 @@
+
+@font-face {
+  font-family:Alte-Haas-Grotesk;
+  src: url("texgyreheros.gyreheros-regular.otf");
+}
+@font-face {
+  font-family: Times;
+  src: url("times new roman.ttf");}
+  
+  .hidden {
+    display: none;
+    
+}
+
+#movableElement {
+    
+    
+  width: auto;
+  
+  text-align: left;
+ 
+  position: absolute;
+  right: 0;
+  font-size: 22pt;
+  
+  font-family: Times;
+  z-index: 0;
+  color: #000000;
+ visibility: hidden;
+ 
+ 
+}
+.show {
+  background-color: white;
+  font-family:Alte-Haas-Grotesk;
+  font-size: 16pt;
+  position: absolute;
+  z-index: 3;
+}
+#tracker-container {
+  position: fixed;
+  
+  bottom: 0;
+  
+  background-color:transparent;
+  color: black;
+  
+  
+  top:1px;
+  right: 20px;
+      z-index: 9999;
+      font-size: 12pt;
+      font-family: Alte-Haas-Grotesk;
+}
+
+.column-container{
+  width: 100%;
+  display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  margin-top: 0;
+  position: fixed;
+  padding-top: 5px;
+  
+  margin-left: 10px;
+  z-index: 2;
+  
+}
+  .custom-icon-button0, .custom-icon-button{
+   
+    background-color: transparent;
+    color:#000000;
+    border: 0px;
+    text-decoration-line:none;
+  
+    cursor: pointer;
+    font-size: 12pt;
+    line-height: 11pt;
+  letter-spacing: -0.5pt;
+  font-family:Alte-Haas-Grotesk;
+  
+  }
+  
+  .custom-icon-button0 a, .custom-icon-button a{
+    text-decoration: none;
+    color: inherit; 
+  }
+  
+   .custom-icon-button0:hover {
+    text-decoration-line: underline;
+    transition-duration: 50ms;
+  }
+  .custom-icon-button{
+    margin-right: 10px;
+    text-align: right;
+  }
+  .custom-icon-button0 {
+    text-align: left;
+    margin-right: 10px;
+  }
+
+  .button {
+    cursor: pointer;
+    z-index: 1;
+   
+    font-size: 12pt;
+  letter-spacing: -0.5pt;
+  line-height: 0pt;
+    font-family:Alte-Haas-Grotesk;
+    margin-left: 0px;
+    
+    
+    color: #000000;
+    text-decoration: none;
+    text-align: justify;
+    
+    
+   }
+  .button:hover {
+      
+      text-decoration-line: underline;
+      transition-duration: 50ms;
+    }
+    
+    .trigger0, .trigger2,.trigger3, .trigger4,.trigger5,.trigger6 {
+      cursor: pointer;
+      z-index: 1;
+      font-family:Alte-Haas-Grotesk;
+      
+      
+      }
+      .trigger6{
+        margin-right: 20px;
+      }
+      
+
+      
+      
+      
+      
+    
+  
+ 
+
+  .mySlides{
+    position: relative;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  z-index: -999;
+}
+.slider-container {
+  z-index: -999;
+}
+
+  .description {
+    position: relative;
+    z-index: 999;
+    height: auto;
+    text-align: left;
+  }
+  
+  
+ 
+  
+ 
+  
+  
+  body{
+    height:100vh;
+     overflow-y:scroll;
+     overflow-x: hidden;
+     display: flex;
+     flex-direction: column;
+     margin-bottom:0;
+     margin-top: 0;
+   }
+   
+   .column-container{
+     flex: 0.4;
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     margin-top: 0;
+     margin-left: 0;
+     margin-right: 0;
+     padding-top: 5px;
+     
+     z-index: 2;
+     background-color: transparent;
+     
+   }
+   
+   .container{
+     display: flex;
+     background-color:transparent;
+     flex:15;
+     width: 100%;
+     height: 100%;
+     
+   }
+
+   .trigger {
+    flex:0.8;
+    position: fixed;
+    bottom:0;
+       z-index: 999;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between; 
+       width: 100%;
+       max-height: 100%;
+       text-align: left;
+       background-color:  white;
+       padding-top: 6px;
+       padding-bottom: 6px;
+       
+   }
+
+
+
+
+
+
+
+
+  .box0 {
+    flex: 1;
+   
+   
+   background-color: transparent;
+   transition: flex 0.15s;
+  
+ 
+   
+ 
+   
+  }
+
+  .box1 {
+    flex: 1;
+    background-color:white;
+   
+   
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: flex 0.15s;
+    z-index: 0;
+  }
+
+  .box1:hover {
+    cursor: w-resize;
+    
+  }
+
+  .box2 {
+    flex: 1;
+   
+  
+    background-color:transparent;
+ 
+   
+ 
+    transition: flex 0.15s;
+   
+    
+  }
+  .text-container{
+    position: absolute;
+    top: 0;
+   right: 20px;
+   position: fixed;
+   
+    
+  }
+  
+  img{
+    margin: 0%;
+    padding: 0%;
+    padding-bottom: 0%;
+     object-fit: fill;
+    z-index: -999;
+  }
+  .show{
+    visibility: hidden;
+  }
+  .triggerMOBILE{
+    visibility: hidden;
+  }
+  p {
+    position: relative;
+    z-index: 999;
+    font-family: Times;
+    font-size: 24pt;
+    
+    text-align: left;
+    padding-bottom: 15%;
+   
+
+  }
+
+ 
+  @media (max-width: 900px) {
+
+    body {
+      background-color: #FFFFFF;
+      display:flex;
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow-y:auto;
+      overflow-x:hidden;
+    }
+    .container {
+      height: 100vh;
+      flex-direction:column;
+      z-index: 0;
+      position: relative;
+      
+    }
+
+    .column-container{
+      margin-top: 4px;
+      position: fixed;
+      margin-left: 10px;
+      z-index: 2;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      width: 50%;
+      justify-content: left;
+      
+    }
+      .custom-icon-button {
+        
+        background-color: transparent;
+        color:#000000;
+       
+        cursor: pointer;
+        padding-left: 0;
+        
+      letter-spacing: -0.5pt;
+      font-family:Alte-Haas-Grotesk;
+      margin-top: 1px;
+      }
+      .custom-icon-button0{
+        visibility: hidden;
+      }
+ 
+    
+   
+  
+    
+    .slider-container {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      width: 100%; /* Set the desired width */
+      
+     
+      
+    }
+    
+    .mySlides {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+      width: 100%; /* Set the slide width */
+      object-fit: cover; /* Use 'cover' to maintain aspect ratio and cover the entire slide */
+      
+      
+      
+    }
+    
+    .mySlides img {
+      width: 100%; /* Ensure the image takes up 100% of the slide width */
+      height: 100%; /* Ensure the image takes up 100% of the slide height */
+      object-fit: cover; /* Maintain aspect ratio and cover the entire slide */
+    }
+    
+  #tracker-container{
+    display: none;
+  }
+  #movableElement {
+  visibility: hidden;
+  
+  }
+  .box1 {
+    margin-top: 28px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .box2 {
+    padding-bottom: 6px;
+  }
+  p {
+    visibility: visible;
+    font-size: 12pt;
+    line-height: 16pt;
+    text-align: left;
+    font-family: Alte-Haas-Grotesk;
+   
+    letter-spacing: 0.1pt;
+  }
+  .trigger0, .trigger2,.trigger3, .trigger4,.trigger5,.trigger6 {
+    padding-left: 0;
+    padding-right: 36px;
+    margin-left: 0;
+    padding-bottom: 6px;
+    }
+
+    .trigger{
+      margin-left: 0px;
+      position: fixed;
+     padding-left: 10px;
+      z-index: 999;
+      white-space: nowrap;
+overflow-x: auto;
+      justify-content: space-between; 
+      
+    
+    }
+}
