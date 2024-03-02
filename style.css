@@ -122,6 +122,7 @@ p {
   z-index:999;
  
   font-size: 12pt;
+   line-height: 12pt;
 letter-spacing: -0.5pt;
 
   font-family:Alte-Haas-Grotesk;
@@ -144,6 +145,7 @@ letter-spacing: -0.5pt;
   cursor: pointer;
   z-index: 999;
   background-color:  transparent;
+  line-height: 12pt;
   
   
   
