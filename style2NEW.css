@@ -104,6 +104,8 @@
     z-index: 1;
    
     font-size: 12pt;
+    line-height: 16pt;
+    
   letter-spacing: -0.5pt;
   line-height: 0pt;
     font-family:Alte-Haas-Grotesk;
@@ -122,10 +124,12 @@
       transition-duration: 50ms;
     }
     
-    .trigger0, .trigger2,.trigger3, .trigger4,.trigger5,.trigger6 {
+    .trigger00, .trigger0, .trigger2,.trigger3, .trigger4,.trigger5,.trigger6 {
       cursor: pointer;
       z-index: 1;
       font-family:Alte-Haas-Grotesk;
+      line-height: 16pt;
+      
       
       
       }
