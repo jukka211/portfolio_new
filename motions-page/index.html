@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Column Video Grid</title>
+    <style>
+       * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000000;
+}
+
+/* Apply 100vh only to the body or a specific container if needed */
+body {
+    height: 100vh;
+    width: 100vw;
+
+}
+
+
+        .video-container {
+          padding-top: 10px;
+          border-top: #000000 solid 1px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr; /* First column for text, others for videos */
+        
+            overflow: hidden; /* Prevents scrolling */
+            gap: 20px; /* Space between columns */
+            margin-bottom: 10%;
+
+ 
+
+
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Ensures text is at the top and bottom */
+            padding: 10px;
+            text-align: left;
+            font-size: 14px;
+            font-weight: bold;
+            color: #ffffff;
+          font-family: Arial, Helvetica, sans-serif;
+padding-top: 0;
+width: 60%;
+
+  
+        }
+
+        .text span {
+            display: block;
+        }
+
+        video {
+      
+
+width: 100%;
+
+            object-fit: contain; /* Ensures videos fill the container properly */
+            border-radius: 16px; /* Rounded corners */
+            border: 0px solid #ccc; /* Border stroke */
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Optional shadow */
+        }
+        .copyrights {
+    position: fixed;
+    top: 0;
+   right: 0;
+background-color: transparent;
+padding-top: 10px;
+padding-right: 10px;
+    color: #fff; /* White text color */
+
+ font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+      .video-container {
+        padding-left: 10px;
+        padding-right: 10px;
+        grid-template-columns: 1fr !important;
+      }
+      /* Optionally adjust text alignment and spacing for mobile */
+      .text {
+        text-align: left;
+        padding: 10px;
+      }
+
+
+      video {
+      
+
+      width: 100%;
+      
+                  object-fit: contain; /* Ensures videos fill the container properly */
+                  border-radius: 8px; /* Rounded corners */
+    }
+  
+    .text {
+           
+width: 100%;
+padding: 0;
+  
+        }}
+    </style>
+</head>
+<body>
+
+  <div class="video-container" style="grid-template-columns: 1fr 1fr 1fr;">
+    <div class="text" >
+      <span>Projekt: <br>
+        Animated poster design for the short film “Metamorphose” directed by Felix Krisai & Pipi Fröstl</span>
+      <span>01</span>
+  </div>
+  
+    <img src="image6.gif" width="100%">
+  
+      
+  </div>
+
+  <div class="video-container" style="grid-template-columns: 1fr 1fr 1fr 1fr;">
+    <div class="text">
+      <span>Projekt: <br>
+       Social media design für qujOchÖ. It presents a special evening dedicated to the question of how signals, noise and bodies support or interfere with each other. </span>
+      <span>02</span>
+  </div>
+
+    <video autoplay loop muted>
+        <source src="Stories-01.mov" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <video autoplay loop muted >
+        <source src="Poster_2_Stories_1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+ 
+      <video autoplay loop muted style="width: 100%; height: auto!important; ">
+        <source src="1_Slide_Post-01.mov" type="video/mp4">
+     
+      Your browser does not support the video tag.
+  </video>
+</div>
+
+
+    <div class="video-container"  style="grid-template-columns: 1fr 2fr 1fr;">
+      <div class="text">
+        <span>Projekt: <br>
+          Animations of the photo book for Winfried Flohner</span>
+        <span>03</span>
+    </div>
+
+      <video autoplay loop muted style=" border-radius: 20px; ">
+          <source src="motion-01.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+
+      <video autoplay loop muted >
+          <source src="flohner-web-01.mov" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+  </div>
+
+ 
+
+
+<div class="video-container" style="grid-template-columns: 1fr 1fr 1fr 1fr;">
+  <div class="text">
+    <span>Projekt: <br>
+      gerhardkirchschleager.at, <br> website design and coding</span>
+    <span>04</span>
+</div>
+
+  <video autoplay loop muted>
+      <source src="g-k-02.mov" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+  <video autoplay loop muted style="height: 45%;">
+    <source src="cca-5-tafel.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+  <video autoplay loop muted >
+      <source src="g-k-01.mov" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+
+    
+</div>
+
+<div class="video-container" style="grid-template-columns: 1fr 1fr 2fr;">
+  <div class="text">
+    <span>Projekt: <br>
+      Social Media design for Female Chefs collective.</span>
+    <span>05</span>
+</div>
+
+    <video autoplay loop muted>
+        <source src="female-chefs-animation-02.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <video autoplay loop muted>
+        <source src="female-chefs-animation-03.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<div class="copyrights"> 
+  © 2025 Ivan Sukhov. All rights reserved.
+
+</div>
+
+</body>
+</html>
